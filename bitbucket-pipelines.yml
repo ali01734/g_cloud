@@ -1,0 +1,24 @@
+# This is a sample build configuration for PHP.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Dockerhub as your build environment.
+image: ybouhjira/php
+
+pipelines:
+  default:
+    - step:
+        script: # Modify the commands below to build your repository.
+          - service mysql start
+          - mysql -h localhost -u root -proot -e "CREATE DATABASE nataalam;"
+          - composer --version
+          - composer install
+          - cp .env.example .env
+          - php artisan key:generate
+          - php artisan migrate --force
+          - php artisan nataalam:install
+
+          # This is a hack, maybe it should be removed
+          - echo "xdebug.max_nesting_level = 300" >> /etc/php5/cli/php.ini
+
+          - php artisan db:seed --force
+          - composer test

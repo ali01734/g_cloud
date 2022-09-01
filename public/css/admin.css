@@ -1,0 +1,103 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+body * {
+    font-family: 'Droid Arabic Naskh', sans-serif;
+}
+
+.margin-left-5 {
+    margin-left: 5px;
+}
+
+.margin-bottom-5 {
+    display: inline-block;
+    margin-bottom: 5px ;
+}
+.collapsed-link {
+    opacity: 0.3;
+    transition: all 500ms ease;
+}
+
+.collapsed-link:hover {
+    opacity: 1;
+}
+
+.link-button {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    /*border is optional*/
+    cursor: pointer;
+}
+
+.fg-red {
+    color: red
+}
+
+.fg-orange {
+    color: darkorange;
+}
+
+.sidetd-small {
+    width: 1%;
+}
+
+.icon-widget input[type='radio'] {
+    display: none;
+}
+
+.icon-widget input[type='radio']:checked + label img {
+    border: 2px dashed blue !important;
+    transform: scale(1.5) !important;
+}
+
+.icon-widget input[type='radio'] + label img {
+    transition: 100ms all ease;
+}
+
+.td-small {
+    width: 1%;
+}
+
+td {
+    vertical-align: middle !important;
+}
+
+.text-large {
+    font-size: 1.5em;
+}
+
+.center {
+    text-align: center !important;
+}
+
+
+
+.change-checkbox:checked ~ input[type='file']{
+    display: none;
+}
+input.change-checkbox {
+    display: inline-block;
+    margin-left: 45px;
+}
+
+
+.item-label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+option:not(:disabled) {
+    font-weight: bold;
+}
+
+.text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+.nowrap {
+    white-space: nowrap !important;
+}

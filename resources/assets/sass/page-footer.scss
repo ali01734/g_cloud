@@ -1,0 +1,13 @@
+#footer {
+    background: #eef0ee;
+    border-top: 1px solid lightgrey;
+    & a {
+        color: #334d86;
+        white-space: nowrap !important;
+        display: block;
+    }
+
+    & .copyright {
+        border-top: 1px solid lightgrey;
+    }
+}

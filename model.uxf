@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>230</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Model&gt;&gt;
+Subject
+--
+- id : int
+- name : string
+--
++ levels() : Level[*]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>20</y>
+      <w>260</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Model&gt;&gt;
+Level
+--
+- id : integer
+- name : string
+--
++ subject() : Subject
++ lessons() : Lesson[*]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>30</y>
+      <w>80</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=*</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>50</y>
+      <w>110</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=*</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>20</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Model&gt;&gt;
+Lesson
+--
+id : int
+name : string
+youtube_id : string
+--
++ level() : Level
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,40 @@
+{
+  "name": "jquery-editable-select",
+  "version": "2.0.0",
+  "authors": [
+    "Indri Muska <indrimuska@gmail.com>"
+  ],
+  "description": "A simple jQuery Plugin that converts a select into an text field with suggestions.",
+  "main": [
+    "dist/jquery-editable-select.min.js",
+    "dist/jquery-editable-select.min.css"
+  ],
+  "keywords": [
+    "jquery",
+    "plugin",
+    "editable",
+    "select",
+    "typeahead",
+    "suggestion"
+  ],
+  "license": "MIT",
+  "homepage": "http://indrimuska.github.io/jquery-editable-select",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^1.1.1"
+  },
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.0",
+    "commit": "d3bd625784284d51ee6068616e3530a8dca3118e"
+  },
+  "_source": "https://github.com/indrimuska/jquery-editable-select.git",
+  "_target": "^2.0.0",
+  "_originalSource": "jquery-editable-select",
+  "_direct": true
+}

@@ -1,0 +1,60 @@
+$sides: top bottom left right;
+
+@for $i from 5 through 60 {
+  @if $i % 5 == 0 {
+    .margin-#{$i} {
+      margin: $i + 0px;
+    }
+
+    .padding-#{$i} {
+      padding: $i + 0px;
+    }
+
+    .padding-lr-#{$i} {
+      padding-left: $i + 0px;
+      padding-right: $i + 0px;
+    }
+
+    @each $side in left right top bottom {
+      .padding-#{$side}-#{$i} {
+        padding-#{$side}: $i + 0px;
+      }
+
+      .margin-#{$side}-#{$i} {
+        margin-#{$side}: $i + 0px;
+      }
+    }
+  }
+}
+
+@each $color in white black grey {
+  .text-#{$color} {
+    color: $color !important;
+  }
+}
+
+.text-small {
+  font-size: 1em;
+}
+
+.text-medium {
+  font-size: 1.5em;
+}
+
+@each $side in $sides {
+  .no-border-#{$side} {
+    border-#{$side}: none !important;
+  }
+
+  .border-#{$side}-only {
+    @each $otherSide in $sides {
+      @if ($side != $otherSide) {
+        border-#{$otherSide}: none;
+      }
+    }
+  }
+}
+
+.no-border {
+  border: none !important;
+}
